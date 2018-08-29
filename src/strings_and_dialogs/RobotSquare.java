@@ -12,11 +12,16 @@ public class RobotSquare {
     public static void main(String[] args) throws Exception {
  
     	// 1. Make a new Robot
-
+Robot Marvin =  new Robot();  
 
         // 3. Put the robot's pen down
-
-
+Marvin.hide();
+Marvin.penDown();
+Marvin.setSpeed(200);
+for (int i = 0; i < 4; i++) {
+	Marvin.move(200);
+	Marvin.turn(90);
+}
         // 6. Make the robot move as fast as possible
 
 
